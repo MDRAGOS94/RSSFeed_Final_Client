@@ -1,0 +1,16 @@
+.text-field {
+   	-fx-background-color: #344152;
+  	-fx-background-radius: 0 0 0 0;
+	
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: right center;
+    -fx-background-size: 20px;
+    
+    -fx-text-fill: lightgray;
+    
+    -fx-border-color:  lightgray;
+ 	-fx-border-width: 0 0 0 0;  
+}
+
+
+

@@ -1,0 +1,25 @@
+.combo-box {
+	-fx-background-color: black;
+    -fx-padding: 3 10 4 20;
+    
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic SANS MS";
+}
+
+.combo-box .label {
+     -fx-text-fill: white; 
+     -fx-font-family: "Comic SANS MS";
+}
+
+.combo-box .list-cell {
+	-fx-background:black;
+	-fx-text-fill: white; 
+}
+ 
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover  {
+	-fx-background: black;
+	-fx-background-color: -fx-selection-bar;
+	-fx-text-fill: white;
+	 -fx-font-size: 13px;
+	-fx-font-family: "Comic SANS MS"; 
+}

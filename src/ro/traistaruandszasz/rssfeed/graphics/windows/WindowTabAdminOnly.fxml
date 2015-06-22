@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="1150.0" style="-fx-background-color: #162252;;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowTabAdminOnly">
+   <children>
+      <ListView fx:id="listViewMessages" prefHeight="442.0" prefWidth="344.0" stylesheets="@../stylesheets/listViewCommentNews.css" />
+      <Label layoutX="382.0" layoutY="34.0" text="_ADD CATEGORY : " textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldCategory" layoutX="382.0" layoutY="69.0" prefHeight="35.0" prefWidth="198.0" stylesheets="@../stylesheets/textFiedUrl.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></TextField>
+      <Button fx:id="buttonAddCategoryAdmin" layoutX="586.0" layoutY="69.0" mnemonicParsing="false" onAction="#buttonAddCategoryAdminClicked" prefHeight="35.0" prefWidth="243.0" stylesheets="@../stylesheets/buttonAddComment.css" text="ADD CATEGORY">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="382.0" layoutY="146.0" prefHeight="35.0" prefWidth="327.0" text="_ADD KEYWORD TO CATEGORY :" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxCategories" layoutX="382.0" layoutY="193.0" prefHeight="35.0" prefWidth="207.0" stylesheets="@../stylesheets/comboBoxCategories.css" />
+      <TextField fx:id="textFieldKeyword" layoutX="596.0" layoutY="193.0" prefHeight="35.0" prefWidth="198.0" stylesheets="@../stylesheets/textFieldNews.css">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></TextField>
+      <Button fx:id="buttonAddKeywordToCategory" layoutX="803.0" layoutY="193.0" mnemonicParsing="false" onAction="#buttonAddKeywordToCategoryClicked" prefHeight="35.0" prefWidth="169.0" stylesheets="@../stylesheets/buttonAddComment.css" text="ADD KEYWORD" />
+   </children>
+</AnchorPane>

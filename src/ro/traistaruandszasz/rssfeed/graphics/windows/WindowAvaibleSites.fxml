@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="267.0" prefWidth="642.0" style="-fx-background-color: #162252;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowAvaibleSites">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="360.0" text="AVAIBLE SITES FOR APPLICATION :" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaAvaibleSites" layoutX="14.0" layoutY="44.0" prefHeight="203.0" prefWidth="642.0" stylesheets="@../stylesheets/textAreaDisplayComments.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

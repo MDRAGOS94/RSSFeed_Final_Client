@@ -1,0 +1,18 @@
+.text-field {
+    -fx-background-color: rgba(53,89,119,0.4);
+    -fx-text-fill: white;
+}
+
+.text-field .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-field .scroll-pane .viewport{
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+}
+
+.text-field .scroll-pane .content{
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="470.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowGetNews">
+   <children>
+      <SplitPane dividerPositions="0.366120218579235" layoutX="266.0" layoutY="53.0" prefHeight="359.0" prefWidth="612.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="listViewOfNewsToAdd" layoutX="19.0" layoutY="77.0" prefHeight="468.0" prefWidth="237.0" stylesheets="@../stylesheets/listViewCommentNews.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="471.0" prefWidth="425.0" style="-fx-background-color: #162252;">
+               <children>
+                  <TextArea fx:id="textAreaShowNewsContent" layoutX="95.0" layoutY="51.0" prefHeight="401.0" prefWidth="564.0" stylesheets="@../stylesheets/textAreaDisplayComments.css" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Comic Sans MS Italic" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="buttonAddNews" layoutX="338.0" layoutY="395.0" mnemonicParsing="false" onAction="#buttonAddNewsClicked" prefHeight="37.0" prefWidth="468.0" stylesheets="@../stylesheets/buttonAddNews.css" text="ADD TO MY NEWS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="0.0" />
+                  <Separator layoutY="421.0" prefHeight="3.0" prefWidth="564.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <ComboBox fx:id="comboBoxCategories" layoutX="1.0" layoutY="431.0" prefHeight="37.0" prefWidth="220.0" stylesheets="@../stylesheets/comboBoxCategories.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+                  <TextField fx:id="textFieldKeyword" layoutY="368.0" prefHeight="44.0" prefWidth="693.0" stylesheets="@../stylesheets/textFiedUrl.css" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font></TextField>
+                  <Button fx:id="buttonPercent" layoutX="599.0" layoutY="372.0" mnemonicParsing="false" onAction="#buttonPercentClicked" prefHeight="44.0" prefWidth="96.0" stylesheets="@../stylesheets/buttonAddComment.css" text="PENCENT" AnchorPane.bottomAnchor="52.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

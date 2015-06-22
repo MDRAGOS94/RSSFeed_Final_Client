@@ -1,0 +1,129 @@
+#buttonAddCommentNews {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonAddCommentNews:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonAddFriendsCommentNews {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonAddFriendsCommentNews:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonAcceptFriendRequest {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonAcceptFriendRequest:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonSendFriendRequest {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonSendFriendRequest:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonSendMessage {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonSendMessage:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonAddCategoryAdmin {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonAddCategoryAdmin:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonAddKeywordToCategory {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonAddKeywordToCategory:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonPercent {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonPercent:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+#buttonRefresh {
+    -fx-background-color: #000033;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 13;
+  	-fx-background-radius: 0 0 10 0;
+  	-fx-border-radius: 0 30 30 0;
+  	-fx-background-radius: 0 30 30 0;
+}
+
+#buttonRefresh:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}
+
+
+
+

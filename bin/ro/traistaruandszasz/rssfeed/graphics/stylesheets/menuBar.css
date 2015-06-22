@@ -1,0 +1,41 @@
+.menu-bar {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-border-color:  white;
+ 	-fx-border-width: 0 0 1 0;
+}
+
+.context-menu {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-padding: 0;
+}
+
+.menu-bar .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu-item .label {
+  	-fx-font-family: "Segoe UI Light";  
+  	-fx-font-size: 12pt;
+  	-fx-text-fill: white;
+  	
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.menu-item:focused {
+    
+}
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="1150.0" style="-fx-background-color: #162252;;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowTabNews">
+   <children>
+      <SplitPane dividerPositions="0.23606271777003485" layoutX="284.0" layoutY="90.0" prefHeight="436.0" prefWidth="1150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #162252;">
+               <children>
+                  <TreeView fx:id="treeViewNews" layoutX="34.0" layoutY="76.0" onMousePressed="#treeViewNewsMousePressed" prefHeight="434.0" prefWidth="268.0" stylesheets="@../stylesheets/treeViewNews.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <contextMenu>
+                        <ContextMenu fx:id="contextMenuTreeViewNews">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#contextMenuDeleteNewsClicked" text="DELETE NEWS" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu></TreeView>
+                  <Button fx:id="buttonRefresh" layoutY="384.0" mnemonicParsing="false" onAction="#buttonRefreshClicked" prefHeight="50.0" prefWidth="268.0" stylesheets="@../stylesheets/buttonAddComment.css" text="REFRESH MY NEWS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #162252;">
+               <children>
+                  <TextArea fx:id="textAreaShowNewsContent" layoutX="214.0" layoutY="77.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../stylesheets/textAreaNews.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="textAreaAddComment" layoutX="40.0" layoutY="189.0" prefHeight="50.0" prefWidth="200.0" stylesheets="@../stylesheets/textAreaNews.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="buttonAddCommentNews" layoutX="756.0" layoutY="252.0" mnemonicParsing="false" onAction="#buttonAddCommentClicked" prefHeight="50.0" prefWidth="146.0" stylesheets="@../stylesheets/buttonAddComment.css" text="ADD COMMENT" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Comic Sans MS Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="textAreaShowNewsTitle" layoutX="14.0" layoutY="14.0" prefHeight="33.0" stylesheets="@../stylesheets/textFieldNews.css" text="#" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Comic Sans MS Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ListView fx:id="listViewShowNewsComments" editable="true" layoutX="40.0" layoutY="207.0" prefHeight="140.0" prefWidth="200.0" stylesheets="@../stylesheets/listViewCommentNews.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="294.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

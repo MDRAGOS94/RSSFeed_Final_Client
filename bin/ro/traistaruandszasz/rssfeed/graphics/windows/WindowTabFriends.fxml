@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="1150.0" style="-fx-background-color: #162252;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowTabFriends">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="375.0" layoutY="116.0" prefHeight="436.0" prefWidth="1150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #162252;">
+               <children>
+                  <TreeView fx:id="treeViewFriendsNews" layoutX="313.0" layoutY="76.0" onMousePressed="#treeViewFriendsNewsMousePressed" prefHeight="434.0" prefWidth="258.0" stylesheets="@../stylesheets/treeViewNews.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="313.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ListView fx:id="listViewFriends" layoutX="97.0" layoutY="79.0" prefHeight="386.0" prefWidth="311.0" stylesheets="@../stylesheets/listViewCommentNews.css" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="buttonAcceptFriendRequest" layoutX="106.0" layoutY="391.0" mnemonicParsing="false" onAction="#buttonAcceptFriendRequestClicked" prefHeight="43.0" prefWidth="99.0" stylesheets="@../stylesheets/buttonAddComment.css" text="ACCEPT REQ" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="106.0" />
+                  <Button fx:id="buttonSendFriendRequest" layoutY="391.0" mnemonicParsing="false" onAction="#buttonSendFriendRequestClicked" prefHeight="43.0" prefWidth="99.0" stylesheets="@../stylesheets/buttonAddComment.css" text="SEND REQ" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+                  <Button fx:id="buttonBlockUser" layoutX="213.0" layoutY="391.0" mnemonicParsing="false" onAction="#buttonBlockUserClicked" prefHeight="43.0" prefWidth="99.0" text="BLOCK" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #162252;">
+               <children>
+                  <TextArea fx:id="textAreaShowFriendsNewsContent" layoutX="214.0" layoutY="77.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../stylesheets/textAreaNews.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="textAreaFriendsAddComment" layoutX="40.0" layoutY="189.0" prefHeight="50.0" prefWidth="200.0" stylesheets="@../stylesheets/textAreaNews.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="buttonAddFriendsCommentNews" layoutX="756.0" layoutY="252.0" mnemonicParsing="false" onAction="#buttonAddFriendsCommentNewsClicked" prefHeight="50.0" prefWidth="146.0" stylesheets="@../stylesheets/buttonAddComment.css" text="ADD COMMENT" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Comic Sans MS Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="textAreaShowFriendsNewsTitle" layoutX="14.0" layoutY="14.0" prefHeight="33.0" stylesheets="@../stylesheets/textFieldNews.css" text="#" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Comic Sans MS Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ListView fx:id="listViewShowNewsComments" editable="true" layoutX="40.0" layoutY="207.0" prefHeight="140.0" prefWidth="200.0" stylesheets="@../stylesheets/listViewCommentNews.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="294.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

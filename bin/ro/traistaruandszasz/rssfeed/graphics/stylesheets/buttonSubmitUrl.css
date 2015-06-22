@@ -1,0 +1,11 @@
+#buttonSubmitUrl {
+    -fx-background-color: #344152;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+    -fx-font-size: 14;
+  	-fx-background-radius: 0 0 10 0;
+}
+
+#buttonSubmitUrl:hover {
+    -fx-background-color: linear-gradient(BLACK 0%, BLACK 20%, BLACK 100%);
+}

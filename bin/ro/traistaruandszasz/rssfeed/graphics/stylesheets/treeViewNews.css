@@ -1,0 +1,25 @@
+.tree-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS"; 
+}
+
+.tree-cell {
+    -fx-background-color: #162252;
+    -fx-text-fill: white;
+    -fx-font-family: "Comic SANS MS";
+}
+
+
+.tree-cell:filled:hover {
+    -fx-background-color: black;
+}
+
+.tree-cell:empty {
+    -fx-background-color: #162252;
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+	-fx-background-color: white;
+}
+

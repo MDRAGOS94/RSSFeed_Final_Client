@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane fx:id="gridPaneSignUp" prefHeight="462.0" prefWidth="481.0" style="-fx-background-color: DARKGRAY, DARKSLATEBLUE; -fx-background-insets: 0.0, 70 0.0 50.0 0.0;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.traistaruandszasz.rssfeed.graphics.controllers.ControllerWindowSignUp">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="24.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="198.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="227.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="9.0" prefWidth="30.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.0" minHeight="6.0" prefHeight="24.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.0" minHeight="6.0" prefHeight="48.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="148.0" minHeight="0.0" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.0" minHeight="4.0" prefHeight="46.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <effect>
+            <InnerShadow choke="0.15" height="190.0" radius="110.75" width="255.0" />
+         </effect>
+   <children>
+      <Label fx:id="labelRegister" prefHeight="42.0" prefWidth="194.0" text="REGISTER" GridPane.columnIndex="1">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.29" color="#46219e" height="35.0" radius="8.25" width="0.0" />
+         </effect>
+      </Label>
+      <Label fx:id="labelNickRegister" text="*NICK :" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Comic Sans MS Bold" size="23.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="32.86" radius="15.93" width="32.86" />
+         </effect>
+      </Label>
+      <Label fx:id="labelPasswordRegister" text="*PASSWORD :" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="32.87" radius="15.932499999999997" width="32.86" />
+         </effect>
+      </Label>
+      <TextField fx:id="textFieldNickRegister" prefHeight="40.0" prefWidth="203.0" style="-fx-background-radius: 5,4,3,5; -fx-background-color: LightGray;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="DARKSLATEBLUE" height="57.11" radius="26.38" width="50.41" />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="passwordFieldPasswordRegister" prefHeight="40.0" prefWidth="203.0" style="-fx-background-radius: 5,4,3,5; -fx-background-color: LightGray;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="DARKSLATEBLUE" height="53.76" radius="25.542499999999997" width="50.41" />
+         </effect>
+      </PasswordField>
+      <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#buttonRegisterClicked" prefHeight="42.0" prefWidth="235.0" stylesheets="@../stylesheets/buttonRegister.css" text="REGISTER" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label fx:id="labelRepeatPassRegister" layoutX="35.0" layoutY="191.0" text="*REPEAT PASS :" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="32.87" radius="15.932499999999997" width="32.86" />
+         </effect>
+      </Label>
+      <PasswordField fx:id="passwordFieldRepeatPassRegister" layoutX="234.0" layoutY="189.0" prefHeight="40.0" prefWidth="203.0" style="-fx-background-radius: 5,4,3,5; -fx-background-color: LightGray;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="DARKSLATEBLUE" height="53.76" radius="25.542499999999997" width="50.41" />
+         </effect>
+      </PasswordField>
+      <Button fx:id="buttonBackToLogin" mnemonicParsing="false" onAction="#buttonBackToLoginClicked" prefHeight="25.0" prefWidth="165.0" stylesheets="@../stylesheets/buttonBackToLogin.css" text="BACK TO LOGIN" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label fx:id="labelErrorRegisterMessage" prefHeight="28.0" prefWidth="201.0" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

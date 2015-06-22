@@ -1,0 +1,31 @@
+.tab {
+	-fx-border-radius: 10 10 0 0;
+  	-fx-background-radius: 10 10 0 0;
+	-fx-background-insets: 1, 0;
+	-fx-focus-color: transparent;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+
+.tab-pane > .tab-header-area > .headers-region > .tab:top {   
+    -fx-background-color: #344152;
+    -fx-pref-height: 35px;    
+    -fx-font-family: "Comic SANS MS"; 
+}   
+  
+.tab-pane > .tab-header-area > .headers-region > .tab:selected:top {    
+    -fx-background-color: #162252;
+    -fx-pref-height: 35px;    
+    -fx-font-family: "Comic SANS MS";
+    -fx-text-fill: white;
+}   
+   
+.tab-pane > .tab-header-area > .tab-header-background {  
+    -fx-background-color: #708090;       
+    -fx-pref-height: 42px;    
+}  
